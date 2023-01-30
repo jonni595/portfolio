@@ -1,0 +1,45 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  font-family: var(--font);
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+  }
+
+::-moz-selection {
+  /* background-color: var(--negro);
+    color: var(--blanco); */
+}
+::selection {
+  /* background-color: var(--negro);
+    color: var(--blanco); */
+}

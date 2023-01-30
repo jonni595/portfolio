@@ -1,0 +1,126 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  font-family: var(--font);
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+::-moz-selection {
+  /* background-color: var(--negro);
+    color: var(--blanco); */
+}
+
+::selection {
+  /* background-color: var(--negro);
+    color: var(--blanco); */
+}
+
+:root {
+  --headings: #FFFFFF;
+  --text-color: #F4F0EF;
+  --bg: #0F0E0E;
+  --underline: #00425A;
+}
+
+:root {
+  --font: "Oswald", sans-serif;
+  --size-xl: 4.375rem;
+  --size-l: 3.75rem;
+  --size-m: 3.4375rem;
+  --size-s: 1.875rem;
+  --size-xs: 1.25rem;
+  --size-xxs: 0.875rem;
+  --fw-xl: 200;
+  --fw-l: 300;
+  --fw-r: 400;
+  --fw-sb: 600;
+  --fw-b: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  line-height: 1.1;
+}
+
+a,
+a:visited {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+}
+
+/*# sourceMappingURL=style.css.map */

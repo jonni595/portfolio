@@ -1,0 +1,70 @@
+:root {
+  --font: "Oswald", sans-serif;
+  --size-xl: 4.375rem;
+  --size-l: 3.75rem;
+  --size-m: 3.4375rem;
+  --size-s: 1.875rem;
+  --size-xs: 1.25rem;
+  --size-xxs: 0.875rem;
+  --fw-xl: 200;
+  --fw-l: 300;
+  --fw-r: 400;
+  --fw-sb: 600;
+  --fw-b: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  line-height: 1.1;
+}
+
+a,
+a:visited {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+}
