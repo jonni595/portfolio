@@ -59,7 +59,7 @@ svg {
   --size-m: 3.4375rem;
   --size-s: 2.5rem;
   --size-xs: 1.5625rem;
-  --size-xxs: 0.875rem;
+  --size-xxs: 1.25rem;
   --fw-xl: 200;
   --fw-l: 300;
   --fw-r: 400;
@@ -126,7 +126,7 @@ label {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 130px 350px;
+  grid-template-rows: 300px 130px 100px;
   width: 90%;
   max-width: 62.5rem;
   margin: 1.25rem auto 0;
@@ -167,6 +167,19 @@ label {
   font-size: var(--size-xs);
   font-weight: var(--fw-xl);
   letter-spacing: 1.7px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0 0;
+}
+.link p {
+  font-size: var(--size-xxs);
+  font-weight: var(--fw-r);
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
