@@ -126,10 +126,10 @@ label {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 130px 100px;
+  grid-template-rows: 300px 130px 100px 500px;
   width: 90%;
   max-width: 62.5rem;
-  margin: 1.25rem auto 0;
+  margin: 1.5625rem auto 0;
 }
 
 .grid__header {
@@ -180,6 +180,31 @@ label {
   font-size: var(--size-xxs);
   font-weight: var(--fw-r);
   text-transform: uppercase;
+}
+
+.grid__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 40px 0 0;
+  border-top: 1px solid var(--headings);
+  border-bottom: 1px solid var(--headings);
+}
+.grid__skills div {
+  width: 90px;
+  height: 50px;
+  padding: 10px 0;
+}
+.grid__skills div h4 {
+  font-size: var(--size-xs);
+  text-align: center;
+  line-height: 1.5;
+  font-weight: var(--fw-sb);
+}
+.grid__skills div p {
+  text-align: center;
+  font-weight: var(--fw-xl);
 }
 
 /*# sourceMappingURL=style.css.map */
