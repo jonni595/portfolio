@@ -13,8 +13,12 @@
   }
   &__header h1 {
     font-size: var(--size-s);
+    font-weight: var(--fw-b);
+    line-height: 1.3;
     text-align: center;
-    line-height: 1.5;
     color: var(--headings);
+  }
+  &__header h1 span {
+    border-bottom: 4px solid var(--underline);
   }
 }

@@ -49,7 +49,7 @@ svg {
   --headings: #FFFFFF;
   --text-color: #F4F0EF;
   --bg: #0F0E0E;
-  --underline: #00425A;
+  --underline: #0081C9;
 }
 
 :root {
@@ -58,7 +58,7 @@ svg {
   --size-l: 3.75rem;
   --size-m: 3.4375rem;
   --size-s: 2.5rem;
-  --size-xs: 1.25rem;
+  --size-xs: 1.5625rem;
   --size-xxs: 0.875rem;
   --fw-xl: 200;
   --fw-l: 300;
@@ -126,7 +126,7 @@ label {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 300px 350px 350px;
+  grid-template-rows: 300px 130px 350px;
   width: 90%;
   max-width: 62.5rem;
   margin: 1.25rem auto 0;
@@ -146,9 +146,27 @@ label {
 }
 .grid__header h1 {
   font-size: var(--size-s);
+  font-weight: var(--fw-b);
+  line-height: 1.3;
   text-align: center;
-  line-height: 1.5;
   color: var(--headings);
+}
+.grid__header h1 span {
+  border-bottom: 4px solid var(--underline);
+}
+
+.grid__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid__description p {
+  padding: 0 1.25rem;
+  text-align: center;
+  line-height: 1.3;
+  font-size: var(--size-xs);
+  font-weight: var(--fw-xl);
+  letter-spacing: 1.7px;
 }
 
 /*# sourceMappingURL=style.css.map */
