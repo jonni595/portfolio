@@ -169,14 +169,14 @@ label {
   letter-spacing: 1.7px;
 }
 
-.link {
+.grid__link {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin: 20px 0 0;
 }
-.link p {
+.grid__link p {
   font-size: var(--size-xxs);
   font-weight: var(--fw-r);
   text-transform: uppercase;
