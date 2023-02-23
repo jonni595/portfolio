@@ -32,18 +32,29 @@
       letter-spacing: 0.9px;
     }
 
-    form button {
+    form input[type="submit"] {
       width: 100%;
       margin-top: 10px;
       padding: 5px 0;
       color: var(--bg);
       background-color: #fff;
       font-weight: var(--fw-r);
-
     }
 
     textarea {
       padding-bottom: 0;
+    }
+  }
+
+  &__footer {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    i.fa-brands {
+      font-size: var(--size-xxs);
     }
   }
 }
