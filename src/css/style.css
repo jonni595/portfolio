@@ -226,7 +226,7 @@ label {
 .contact {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 120px 180px 100px;
+  grid-template-rows: 120px 200px 70px;
 }
 .contact__title {
   display: flex;
@@ -234,7 +234,8 @@ label {
   justify-content: space-evenly;
   padding: 0 10px;
 }
-.contact__title h2, .contact__title p {
+.contact__title h2,
+.contact__title p {
   text-align: center;
 }
 .contact__title h2 {
@@ -243,15 +244,25 @@ label {
 .contact__form {
   width: 45%;
   margin: 8px auto;
-  /* display: flex;
-  flex-direction: column; */
 }
-.contact__form form input, .contact__form textarea {
+.contact__form form input,
+.contact__form textarea {
   width: 100%;
   padding: 10px 0 5px;
   border-bottom: 1px solid #fff;
   font-weight: var(--fw-xl);
   letter-spacing: 0.9px;
+}
+.contact__form form button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 0;
+  color: var(--bg);
+  background-color: #fff;
+  font-weight: var(--fw-r);
+}
+.contact__form textarea {
+  padding-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
