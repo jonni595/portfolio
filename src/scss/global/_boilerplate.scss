@@ -30,16 +30,7 @@ figure {
 }
 
 svg {
-    width: 100%;
-    display: block;
-    fill: currentColor;
-  }
-
-::-moz-selection {
-  /* background-color: var(--negro);
-    color: var(--blanco); */
-}
-::selection {
-  /* background-color: var(--negro);
-    color: var(--blanco); */
+  width: 100%;
+  display: block;
+  fill: currentColor;
 }
