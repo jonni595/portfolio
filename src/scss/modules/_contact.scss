@@ -39,9 +39,15 @@
       color: var(--bg);
       background-color: #fff;
       font-weight: var(--fw-r);
+
+      &:hover {
+        background-color: var(--hv-btn);
+        cursor: pointer;
+      }
     }
 
-    form input::placeholder,textarea::placeholder {
+    form input::placeholder,
+    textarea::placeholder {
       color: var(--placeholder);
     }
 
@@ -59,6 +65,11 @@
 
     i.fa-brands {
       font-size: var(--size-xxs);
+
+      &:hover {
+        color: var(--hv-btn);
+        cursor: pointer;
+      }
     }
   }
 }

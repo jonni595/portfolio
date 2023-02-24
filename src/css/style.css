@@ -42,6 +42,7 @@ svg {
   --text-color: #F4F0EF;
   --hv-text-color: #0081C9;
   --hv-card: #FCFFE7;
+  --hv-btn: #FEFBE9;
   --bg: #0F0E0E;
   --placeholder: #C4D7E0;
   --underline: #3BACB6;
@@ -275,7 +276,12 @@ label {
   background-color: #fff;
   font-weight: var(--fw-r);
 }
-.contact__form form input::placeholder, .contact__form textarea::placeholder {
+.contact__form form input[type=submit]:hover {
+  background-color: var(--hv-btn);
+  cursor: pointer;
+}
+.contact__form form input::placeholder,
+.contact__form textarea::placeholder {
   color: var(--placeholder);
 }
 .contact__form textarea {
@@ -290,6 +296,10 @@ label {
 }
 .contact__footer i.fa-brands {
   font-size: var(--size-xxs);
+}
+.contact__footer i.fa-brands:hover {
+  color: var(--hv-btn);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
