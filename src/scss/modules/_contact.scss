@@ -65,10 +65,13 @@
 
     i.fa-brands {
       font-size: var(--size-xxs);
+      transition: transform all .4s;
 
       &:hover {
         color: var(--hv-btn);
         cursor: pointer;
+        transform: rotateZ(360deg);
+        transition: all .4s;
       }
     }
   }

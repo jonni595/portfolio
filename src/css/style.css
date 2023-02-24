@@ -296,10 +296,13 @@ label {
 }
 .contact__footer i.fa-brands {
   font-size: var(--size-xxs);
+  transition: transform all 0.4s;
 }
 .contact__footer i.fa-brands:hover {
   color: var(--hv-btn);
   cursor: pointer;
+  transform: rotateZ(360deg);
+  transition: all 0.4s;
 }
 
 /*# sourceMappingURL=style.css.map */
