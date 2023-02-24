@@ -41,6 +41,10 @@
       font-weight: var(--fw-r);
     }
 
+    form input::placeholder,textarea::placeholder {
+      color: var(--placeholder);
+    }
+
     textarea {
       padding-bottom: 0;
     }

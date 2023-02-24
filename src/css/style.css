@@ -43,6 +43,7 @@ svg {
   --hv-text-color: #0081C9;
   --hv-card: #FCFFE7;
   --bg: #0F0E0E;
+  --placeholder: #C4D7E0;
   --underline: #3BACB6;
 }
 
@@ -273,6 +274,9 @@ label {
   color: var(--bg);
   background-color: #fff;
   font-weight: var(--fw-r);
+}
+.contact__form form input::placeholder, .contact__form textarea::placeholder {
+  color: var(--placeholder);
 }
 .contact__form textarea {
   padding-bottom: 0;
