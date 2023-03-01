@@ -228,6 +228,7 @@ label {
   text-align: center;
   color: var(--text-color);
   font-size: var(--size-s);
+  padding-top: 10px;
 }
 .project__images {
   display: flex;
@@ -235,7 +236,7 @@ label {
   align-content: space-evenly;
 }
 .project__images img {
-  width: 100%;
+  width: 158.84px;
   height: 100px;
 }
 .project__images h3 {
