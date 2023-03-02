@@ -331,12 +331,28 @@ label {
   justify-content: space-evenly;
   padding: 0 10px;
 }
+@media (min-width: 744px) {
+  .contact__title {
+    padding: 15px 10px 5px;
+  }
+}
 .contact__title h2,
 .contact__title p {
   text-align: center;
 }
 .contact__title h2 {
   font-size: var(--size-s);
+}
+@media (min-width: 744px) {
+  .contact__title h2 {
+    font-size: var(--size-l);
+  }
+}
+@media (min-width: 744px) {
+  .contact__title p {
+    font-size: 14px;
+    font-weight: var(--fw-xl);
+  }
 }
 .contact__form {
   width: 45%;
@@ -349,6 +365,13 @@ label {
   border-bottom: 1px solid #fff;
   font-weight: var(--fw-xl);
   letter-spacing: 0.9px;
+}
+@media (min-width: 744px) {
+  .contact__form form input,
+  .contact__form textarea {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 }
 .contact__form form input[type=submit] {
   width: 100%;
@@ -365,6 +388,7 @@ label {
 .contact__form form input::placeholder,
 .contact__form textarea::placeholder {
   color: var(--placeholder);
+  padding-left: 5px;
 }
 .contact__form textarea {
   padding-bottom: 0;
@@ -379,6 +403,11 @@ label {
 .contact__footer i.fa-brands {
   font-size: var(--size-xxs);
   transition: transform all 0.4s;
+}
+@media (min-width: 744px) {
+  .contact__footer i.fa-brands {
+    font-size: var(--size-xs);
+  }
 }
 .contact__footer i.fa-brands:hover {
   color: var(--hv-btn);

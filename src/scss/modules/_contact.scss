@@ -9,6 +9,10 @@
     justify-content: space-evenly;
     padding: 0 10px;
 
+    @media (min-width: 744px) {
+      padding: 15px 10px 5px;
+    }
+
     h2,
     p {
       text-align: center;
@@ -16,6 +20,17 @@
 
     h2 {
       font-size: var(--size-s);
+
+      @media (min-width: 744px) {
+        font-size: var(--size-l);
+      }
+    }
+
+    p {
+      @media (min-width: 744px) {
+        font-size: 14px;
+        font-weight: var(--fw-xl);
+      }
     }
   }
 
@@ -30,6 +45,11 @@
       border-bottom: 1px solid #fff;
       font-weight: var(--fw-xl);
       letter-spacing: 0.9px;
+
+      @media (min-width: 744px) {
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
     }
 
     form input[type="submit"] {
@@ -49,6 +69,7 @@
     form input::placeholder,
     textarea::placeholder {
       color: var(--placeholder);
+      padding-left: 5px;
     }
 
     textarea {
@@ -65,13 +86,17 @@
 
     i.fa-brands {
       font-size: var(--size-xxs);
-      transition: transform all .4s;
+      transition: transform all 0.4s;
+
+      @media (min-width: 744px) {
+        font-size: var(--size-xs);
+      }
 
       &:hover {
         color: var(--hv-btn);
         cursor: pointer;
         transform: rotateZ(360deg);
-        transition: all .4s;
+        transition: all 0.4s;
       }
     }
   }
