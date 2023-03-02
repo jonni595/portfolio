@@ -12,3 +12,15 @@
     letter-spacing: 1.7px;
   }
 }
+
+//  Media Queries
+.grid__description {
+  @media (min-width: 744px) {
+    justify-content: flex-start;
+
+    p {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
