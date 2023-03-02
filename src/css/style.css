@@ -50,8 +50,8 @@ svg {
 
 :root {
   --font: "Oswald", sans-serif;
-  --size-xl: 4.375rem;
-  --size-l: 3.75rem;
+  --size-xl: 5rem;
+  --size-l: 4.375rem;
   --size-m: 3.4375rem;
   --size-s: 2.5rem;
   --size-xs: 1.5625rem;
@@ -148,15 +148,21 @@ label {
   text-align: center;
   color: var(--headings);
 }
-.grid__header h1 {
-  /* font-size: var(--size-s);
-  font-weight: var(--fw-b);
-  line-height: 1.3;
-  text-align: center;
-  color: var(--headings); */
-}
 .grid__header h1 span {
   border-bottom: 4px solid var(--underline);
+}
+
+@media (min-width: 744px) {
+  .grid__header {
+    flex-direction: row-reverse;
+  }
+  .grid__header h1 {
+    font-size: var(--size-l);
+  }
+  .grid__header img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .grid__description {
