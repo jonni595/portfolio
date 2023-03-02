@@ -4,10 +4,26 @@
   justify-content: space-evenly;
   align-items: center;
   margin: 20px 0 0;
+  position: relative;
 
   p {
     font-size: var(--size-xxs);
     font-weight: var(--fw-r);
     text-transform: uppercase;
+  }
+}
+
+// Media Queries
+
+.grid__link {
+  @media (min-width: 744px) {
+    align-items: start;
+    padding-left: 12px;
+
+    .fa-solid {
+      position: absolute;
+      bottom: 10px;
+      left: 32px;
+    }
   }
 }

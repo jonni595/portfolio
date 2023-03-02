@@ -195,11 +195,24 @@ label {
   justify-content: space-evenly;
   align-items: center;
   margin: 20px 0 0;
+  position: relative;
 }
 .grid__link p {
   font-size: var(--size-xxs);
   font-weight: var(--fw-r);
   text-transform: uppercase;
+}
+
+@media (min-width: 744px) {
+  .grid__link {
+    align-items: start;
+    padding-left: 12px;
+  }
+  .grid__link .fa-solid {
+    position: absolute;
+    bottom: 10px;
+    left: 32px;
+  }
 }
 
 .grid__skills {
