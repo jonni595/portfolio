@@ -249,6 +249,24 @@ label {
   font-weight: var(--fw-xl);
 }
 
+@media (min-width: 744px) {
+  .grid__skills {
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 20px;
+  }
+  .grid__skills .grid__card {
+    width: 200px;
+    height: 90px;
+  }
+  .grid__skills .grid__card h2 {
+    font-size: var(--size-m);
+  }
+  .grid__skills .grid__card p {
+    font-size: 16px;
+  }
+}
+
 .project {
   display: grid;
   gap: 20px;
