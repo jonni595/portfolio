@@ -284,17 +284,40 @@ label {
   font-size: var(--size-s);
   padding-top: 10px;
 }
+@media (min-width: 744px) {
+  .project__title h2 {
+    font-size: var(--size-l);
+  }
+}
 .project__images {
   display: flex;
   flex-flow: row wrap;
   align-content: space-evenly;
 }
+@media (min-width: 375px) and (max-width: 1024px) {
+  .project__images {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 .project__images img {
   max-width: 158px;
   height: 100px;
 }
+@media (min-width: 744px) {
+  .project__images img {
+    max-width: 200px;
+    height: 130px;
+  }
+}
 .project__images h3 {
   font-weight: var(--fw-r);
+}
+@media (min-width: 744px) {
+  .project__images h3 {
+    font-weight: var(--fw-l);
+    font-size: 14px;
+  }
 }
 
 .contact {
