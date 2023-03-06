@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
 
+  @media (min-width: 744px) {
+    justify-content: flex-start;
+  }
+
   p {
     padding: 0 1.25rem;
     text-align: center;
@@ -10,17 +14,15 @@
     font-size: var(--size-xs);
     font-weight: var(--fw-xl);
     letter-spacing: 1.7px;
-  }
-}
 
-//  Media Queries
-.grid__description {
-  @media (min-width: 744px) {
-    justify-content: flex-start;
-
-    p {
+    @media (min-width: 744px) {
       font-size: 20px;
       text-align: left;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: var(--size-s);
+      letter-spacing: 1.5px;
     }
   }
 }

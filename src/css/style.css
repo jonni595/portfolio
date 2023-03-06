@@ -189,6 +189,11 @@ label {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 744px) {
+  .grid__description {
+    justify-content: flex-start;
+  }
+}
 .grid__description p {
   padding: 0 1.25rem;
   text-align: center;
@@ -197,14 +202,16 @@ label {
   font-weight: var(--fw-xl);
   letter-spacing: 1.7px;
 }
-
 @media (min-width: 744px) {
-  .grid__description {
-    justify-content: flex-start;
-  }
   .grid__description p {
     font-size: 20px;
     text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .grid__description p {
+    font-size: var(--size-s);
+    letter-spacing: 1.5px;
   }
 }
 
