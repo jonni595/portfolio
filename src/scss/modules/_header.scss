@@ -6,10 +6,24 @@
     align-items: center;
     justify-content: space-around;
 
+    @media (min-width: 744px) {
+      flex-direction: row-reverse;
+    }
+
     img {
       width: 170px;
       height: 170px;
       border-radius: 50%;
+
+      @media (min-width: 744px) {
+        width: 250px;
+        height: 250px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 300px;
+        height: 300px;
+      }
     }
 
     h1 {
@@ -18,26 +32,17 @@
       line-height: 1.3;
       text-align: center;
       color: var(--headings);
+
+      @media (min-width: 744px) {
+        font-size: var(--size-l);
+      }
+
+      @media (min-width: 1024px) {
+        font-size: var(--size-xl);
+      }
     }
   }
   &__header h1 span {
     border-bottom: 4px solid var(--underline);
-  }
-}
-
-// Media Queries
-
-.grid__header {
-  @media (min-width: 744px) {
-    flex-direction: row-reverse;
-
-    h1 {
-      font-size: var(--size-l);
-    }
-
-    img {
-      width: 250px;
-      height: 250px;
-    }
   }
 }

@@ -6,4 +6,8 @@
   width: 90%;
   max-width: 62.5rem;
   margin: 1.5625rem auto 0;
+
+  @media (min-width: 1024px) {
+    max-width: 1440px;
+  }
 }
