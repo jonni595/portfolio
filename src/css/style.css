@@ -412,7 +412,7 @@ label {
 }
 @media (min-width: 744px) {
   .contact__footer i.fa-brands {
-    font-size: var(--size-xs);
+    font-size: var(--size-s);
   }
 }
 .contact__footer i.fa-brands:hover {
