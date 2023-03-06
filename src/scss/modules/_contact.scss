@@ -3,10 +3,14 @@
   grid-template-columns: 1fr;
   grid-template-rows: 120px 200px 70px;
 
+  @media (min-width: 744px) {
+    grid-template-rows: 120px 250px 70px;
+  }
+
   &__title {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0 10px;
 
     @media (min-width: 744px) {
@@ -28,15 +32,16 @@
 
     p {
       @media (min-width: 744px) {
-        font-size: 14px;
+        font-size: 15px;
         font-weight: var(--fw-xl);
+        letter-spacing: 1.2px;
       }
     }
   }
 
   &__form {
     width: 45%;
-    margin: 8px auto;
+    margin: 15px auto;
 
     form input,
     textarea {

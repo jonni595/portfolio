@@ -325,10 +325,15 @@ label {
   grid-template-columns: 1fr;
   grid-template-rows: 120px 200px 70px;
 }
+@media (min-width: 744px) {
+  .contact {
+    grid-template-rows: 120px 250px 70px;
+  }
+}
 .contact__title {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0 10px;
 }
 @media (min-width: 744px) {
@@ -350,13 +355,14 @@ label {
 }
 @media (min-width: 744px) {
   .contact__title p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: var(--fw-xl);
+    letter-spacing: 1.2px;
   }
 }
 .contact__form {
   width: 45%;
-  margin: 8px auto;
+  margin: 15px auto;
 }
 .contact__form form input,
 .contact__form textarea {
