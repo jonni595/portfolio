@@ -6,24 +6,27 @@
   margin: 20px 0 0;
   position: relative;
 
-  p {
-    font-size: var(--size-xxs);
-    font-weight: var(--fw-r);
-    text-transform: uppercase;
-  }
-}
-
-// Media Queries
-
-.grid__link {
   @media (min-width: 744px) {
     align-items: start;
     padding-left: 12px;
+  }
 
-    .fa-solid {
+  a {
+    font-size: var(--size-xxs);
+    font-weight: var(--fw-r);
+    text-transform: uppercase;
+
+    @media (min-width: 744px) {
+      font-size: var(--size-xs);
+    }
+  }
+
+  .fa-solid {
+    @media (min-width: 744px) {
       position: absolute;
-      bottom: 10px;
-      left: 32px;
+      bottom: 5px;
+      left: 40px;
+      font-size: 14px;
     }
   }
 }
