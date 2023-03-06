@@ -46,6 +46,12 @@ svg {
   --bg: #0F0E0E;
   --placeholder: #C4D7E0;
   --underline: #3BACB6;
+  --html: #E64A19;
+  --css: #1572b7;
+  --js: #f7e018;
+  --react: #09d9ff;
+  --bootstrap: #5a3779;
+  --sass: #cd6797;
 }
 
 :root {
@@ -128,7 +134,7 @@ label {
   max-width: 62.5rem;
   margin: 1.5625rem auto 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1920px) {
   .grid {
     max-width: 1440px;
   }
@@ -257,18 +263,42 @@ label {
   border-top: 1px solid var(--headings);
   border-bottom: 1px solid var(--headings);
 }
+@media (min-width: 744px) {
+  .grid__skills {
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 20px;
+  }
+}
 .grid__skills .grid__card {
   width: 90px;
   height: 50px;
   padding: 10px 0;
   transition: transform 0.5s ease-in-out;
 }
+@media (min-width: 744px) {
+  .grid__skills .grid__card {
+    width: 200px;
+    height: 90px;
+  }
+}
+@media (min-width: 1024px) {
+  .grid__skills .grid__card {
+    width: 290px;
+    height: 100px;
+  }
+}
+@media (min-width: 1440px) {
+  .grid__skills .grid__card {
+    width: 350px;
+    height: 100px;
+  }
+}
 .grid__skills .grid__card:hover {
   background: transparent;
   color: var(--hv-card);
   border-radius: 5px;
-  box-shadow: 0px 0px 5px 1px rgb(168, 168, 168), 0px 0px 5px 1px rgb(168, 168, 168);
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: 0.5 ease;
 }
 .grid__skills .grid__card h2 {
@@ -277,27 +307,50 @@ label {
   line-height: 1.5;
   font-weight: var(--fw-sb);
 }
+@media (min-width: 744px) {
+  .grid__skills .grid__card h2 {
+    font-size: var(--size-m);
+  }
+}
+@media (min-width: 1024px) {
+  .grid__skills .grid__card h2 {
+    font-size: var(--size-l);
+  }
+}
 .grid__skills .grid__card p {
   text-align: center;
   font-weight: var(--fw-xl);
 }
-
 @media (min-width: 744px) {
-  .grid__skills {
-    flex-flow: row wrap;
-    align-content: center;
-    gap: 20px;
-  }
-  .grid__skills .grid__card {
-    width: 200px;
-    height: 90px;
-  }
-  .grid__skills .grid__card h2 {
-    font-size: var(--size-m);
-  }
   .grid__skills .grid__card p {
     font-size: 16px;
   }
+}
+.grid__skills .html,
+.grid__skills .css,
+.grid__skills .js,
+.grid__skills .react,
+.grid__skills .bootstrap,
+.grid__skills .sass {
+  transition: 0.5s ease;
+}
+.grid__skills .html:hover {
+  color: var(--html);
+}
+.grid__skills .css:hover {
+  color: var(--css);
+}
+.grid__skills .js:hover {
+  color: var(--js);
+}
+.grid__skills .react:hover {
+  color: var(--react);
+}
+.grid__skills .bootstrap:hover {
+  color: var(--bootstrap);
+}
+.grid__skills .sass:hover {
+  color: var(--sass);
 }
 
 .project {

@@ -7,19 +7,38 @@
   border-top: 1px solid var(--headings);
   border-bottom: 1px solid var(--headings);
 
+  @media (min-width: 744px) {
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 20px;
+  }
+
   .grid__card {
     width: 90px;
     height: 50px;
     padding: 10px 0;
     transition: transform 0.5s ease-in-out;
 
+    @media (min-width: 744px) {
+      width: 200px;
+      height: 90px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 290px;
+      height: 100px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 350px;
+      height: 100px;
+    }
+
     &:hover {
       background: transparent;
       color: var(--hv-card);
       border-radius: 5px;
-      box-shadow: 0px 0px 5px 1px rgba(168, 168, 168, 1),
-        0px 0px 5px 1px rgba(168, 168, 168, 1);
-      transform: scale(1.3);
+      transform: scale(1.2);
       transition: 0.5 ease;
     }
 
@@ -28,34 +47,51 @@
       text-align: center;
       line-height: 1.5;
       font-weight: var(--fw-sb);
+
+      @media (min-width: 744px) {
+        font-size: var(--size-m);
+      }
+
+      @media (min-width: 1024px) {
+        font-size: var(--size-l);
+      }
     }
 
     p {
       text-align: center;
       font-weight: var(--fw-xl);
-    }
-  }
-}
 
-// Media Queries
-
-.grid__skills {
-  @media (min-width: 744px) {
-    flex-flow: row wrap;
-    align-content: center;
-    gap: 20px;
-
-    .grid__card {
-      width: 200px;
-      height: 90px;
-
-      h2 {
-        font-size: var(--size-m);
-      }
-
-      p {
+      @media (min-width: 744px) {
         font-size: 16px;
       }
     }
+  }
+
+  .html,
+  .css,
+  .js,
+  .react,
+  .bootstrap,
+  .sass {
+    transition: 0.5s ease;
+  }
+
+  .html:hover {
+    color: var(--html);
+  }
+  .css:hover {
+    color: var(--css);
+  }
+  .js:hover {
+    color: var(--js);
+  }
+  .react:hover {
+    color: var(--react);
+  }
+  .bootstrap:hover {
+    color: var(--bootstrap);
+  }
+  .sass:hover {
+    color: var(--sass);
   }
 }
