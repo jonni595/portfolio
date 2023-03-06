@@ -436,7 +436,7 @@ label {
 .contact__title {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 10px;
 }
 @media (min-width: 744px) {
@@ -466,6 +466,11 @@ label {
 .contact__form {
   width: 45%;
   margin: 15px auto;
+}
+@media (min-width: 1024px) {
+  .contact__form {
+    width: 38%;
+  }
 }
 .contact__form form input,
 .contact__form textarea {
@@ -516,6 +521,11 @@ label {
 @media (min-width: 744px) {
   .contact__footer i.fa-brands {
     font-size: var(--size-s);
+  }
+}
+@media (min-width: 1024px) {
+  .contact__footer i.fa-brands {
+    font-size: var(--size-m);
   }
 }
 .contact__footer i.fa-brands:hover {
