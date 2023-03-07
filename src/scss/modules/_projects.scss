@@ -3,9 +3,16 @@
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 100px repeat(3, 155px);
+  margin: 0 auto;
   border-bottom: 1px solid var(--headings);
 
   @media (min-width: 1024px) {
+    width: 70%;
+    column-gap: 10px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 50%;
     column-gap: 10px;
   }
 
@@ -47,7 +54,7 @@
       }
 
       @media (min-width: 1024px) {
-        max-width: 280px;
+        max-width: 250px;
       }
 
     }
