@@ -319,6 +319,7 @@ label {
 }
 .grid__skills .grid__card p {
   text-align: center;
+  font-size: 12.5px;
   font-weight: var(--fw-xl);
 }
 @media (min-width: 744px) {
