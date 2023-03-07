@@ -47,6 +47,12 @@
       max-width: 158px;
       height: 100px;
       border-radius: 5px;
+      transition: .5s all;
+
+      &:hover {
+        opacity: .7;
+        transform: scale(.95);
+      }
 
       @media (min-width: 744px) {
         max-width: 200px;
