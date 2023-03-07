@@ -156,6 +156,10 @@ label {
   width: 170px;
   height: 170px;
   border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+}
+.grid__header img:hover {
+  box-shadow: 0px 0px 20px 0px rgb(158, 158, 158);
 }
 @media (min-width: 744px) {
   .grid__header img {
