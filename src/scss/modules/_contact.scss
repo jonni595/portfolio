@@ -31,10 +31,15 @@
     }
 
     p {
+      font-weight: var(--fw-xl);
+
       @media (min-width: 744px) {
         font-size: 15px;
-        font-weight: var(--fw-xl);
         letter-spacing: 1.2px;
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 18px;
       }
     }
   }
@@ -55,9 +60,8 @@
       font-weight: var(--fw-xl);
       letter-spacing: 0.9px;
 
-      @media (min-width: 744px) {
+      @media (min-width: 744px) and (max-width: 1024px) {
         font-size: 14px;
-        letter-spacing: 1px;
       }
     }
 
