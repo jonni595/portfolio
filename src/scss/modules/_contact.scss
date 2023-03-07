@@ -4,7 +4,7 @@
   grid-template-rows: 120px 200px 70px;
 
   @media (min-width: 744px) {
-    grid-template-rows: 120px 280px 90px;
+    grid-template-rows: 120px 280px 190px;
   }
 
   &__title {
@@ -103,11 +103,11 @@
       transition: transform all 0.4s;
 
       @media (min-width: 744px) {
-        font-size: var(--size-s);
+        font-size: 35px;
       }
 
       @media (min-width: 1024px) {
-        font-size: var(--size-m);
+        font-size: var(--size-l);
       }
 
       &:hover {

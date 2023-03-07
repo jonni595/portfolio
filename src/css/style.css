@@ -448,7 +448,7 @@ label {
 }
 @media (min-width: 744px) {
   .contact {
-    grid-template-rows: 120px 280px 90px;
+    grid-template-rows: 120px 280px 190px;
   }
 }
 .contact__title {
@@ -545,12 +545,12 @@ label {
 }
 @media (min-width: 744px) {
   .contact__footer i.fa-brands {
-    font-size: var(--size-s);
+    font-size: 35px;
   }
 }
 @media (min-width: 1024px) {
   .contact__footer i.fa-brands {
-    font-size: var(--size-m);
+    font-size: var(--size-l);
   }
 }
 .contact__footer i.fa-brands:hover {
