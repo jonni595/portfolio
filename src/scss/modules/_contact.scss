@@ -53,6 +53,10 @@
       width: 38%;
     }
 
+    @media (min-width: 1920px) {
+      width: 35%;
+    }
+
     form input,
     textarea {
       width: 100%;
@@ -61,7 +65,7 @@
       font-weight: var(--fw-xl);
       letter-spacing: 0.9px;
 
-      @media (min-width: 744px) and (max-width: 1440px) {
+      @media (min-width: 744px) and (max-width: 1920px) {
         font-size: 17px;
       }
     }

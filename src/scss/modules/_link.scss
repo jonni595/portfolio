@@ -22,11 +22,28 @@
   }
 
   .fa-solid {
+    position: absolute;
+    animation-name: arrow;
+    animation-duration: 1.4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
     @media (min-width: 744px) {
-      position: absolute;
       bottom: 5px;
       left: 40px;
       font-size: 14px;
     }
+  }
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
   }
 }

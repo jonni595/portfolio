@@ -249,15 +249,32 @@ label {
     font-size: var(--size-xs);
   }
 }
+.grid__link .fa-solid {
+  position: absolute;
+  animation-name: arrow;
+  animation-duration: 1.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
 @media (min-width: 744px) {
   .grid__link .fa-solid {
-    position: absolute;
     bottom: 5px;
     left: 40px;
     font-size: 14px;
   }
 }
 
+@keyframes arrow {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: -15px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 .grid__skills {
   display: flex;
   flex-direction: column;
@@ -498,6 +515,11 @@ label {
     width: 38%;
   }
 }
+@media (min-width: 1920px) {
+  .contact__form {
+    width: 35%;
+  }
+}
 .contact__form form input,
 .contact__form textarea {
   width: 100%;
@@ -506,7 +528,7 @@ label {
   font-weight: var(--fw-xl);
   letter-spacing: 0.9px;
 }
-@media (min-width: 744px) and (max-width: 1440px) {
+@media (min-width: 744px) and (max-width: 1920px) {
   .contact__form form input,
   .contact__form textarea {
     font-size: 17px;
