@@ -30,10 +30,19 @@ $profile.addEventListener("mousemove", (evt) => {
   const xRotation = ((layerY - height / 2) / height) * 20;
 
   const string = `
-  perspective(500px)
+  perspective(400px)
   scale(1.1)
   rotateX(${xRotation}deg)
   rotateY(${yRotation}deg)
   `;
   $profile.style.transform = string;
+});
+
+$profile.addEventListener("mouseout", () => {
+  $profile.style.transform = `
+  perspective(400px)
+  scale(1)
+  rotateX(0)
+  rotateY(0)
+  `;
 });

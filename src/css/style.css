@@ -159,7 +159,7 @@ label {
   transition: box-shadow 0.3s ease;
 }
 .grid__header img:hover {
-  box-shadow: 0px 0px 20px 0px rgb(158, 158, 158);
+  box-shadow: 0px 0px 20px 0px rgb(107, 106, 107);
 }
 @media (min-width: 744px) {
   .grid__header img {
