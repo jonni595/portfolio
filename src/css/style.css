@@ -487,10 +487,10 @@ label {
   font-weight: var(--fw-xl);
   letter-spacing: 0.9px;
 }
-@media (min-width: 744px) and (max-width: 1024px) {
+@media (min-width: 744px) and (max-width: 1440px) {
   .contact__form form input,
   .contact__form textarea {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 .contact__form form input[type=submit] {
