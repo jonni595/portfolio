@@ -2,7 +2,7 @@ import type { Hero } from "@/types/models";
 
 export const heroData: Hero = {
   greeting: "👋 Hello, I'm",
-  name: "AsmrProg",
+  name: "Jonathan Dajome",
   roles: [
     "Frontend Developer",
     "UI/UX Designer",
@@ -20,12 +20,12 @@ export const heroData: Hero = {
     {
       name: "GitHub",
       url: "https://github.com/AsmrProg-YT",
-      icon: "Github",
+      icon: "Code",
     },
     {
       name: "LinkedIn",
       url: "https://linkedin.com/in/yourusername",
-      icon: "Linkedin",
+      icon: "Briefcase",
     },
     {
       name: "Email",
