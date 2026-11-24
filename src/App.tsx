@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const hasAnimated = useIntersectionObserver();
@@ -20,6 +21,7 @@ const App = () => {
       <Skills hasAnimated={hasAnimated} />
       <Contact hasAnimated={hasAnimated} />
       <Footer />
+      <ScrollToTop showScrollTop={showScrollTop} />
     </main>
   );
 };
