@@ -1,32 +1,108 @@
-# React + TypeScript + Vite
+# Portfolio de Jonathan Dajome
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfolio personal desarrollado con React y TypeScript. Presenta información profesional, proyectos destacados, habilidades, enlaces de contacto y una navegación adaptable para dispositivos móviles y escritorio.
 
-Currently, two official plugins are available:
+## Caracteristicas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Hero con efecto de escritura animado
+- Navegacion fija y menu responsivo
+- Secciones de perfil, proyectos, habilidades y contacto
+- Animaciones activadas al entrar en el area visible
+- Boton flotante para volver al inicio
+- Desplazamiento suave entre secciones
+- Iconos mediante Lucide React
+- Diseno responsivo con Tailwind CSS
 
-## React Compiler
+## Tecnologias
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS 4
+- Lucide React
+- Oxlint
 
-## Expanding the Oxlint configuration
+## Requisitos
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- Node.js 20 o superior
+- pnpm
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Instalacion
+
+Clona el repositorio y entra en el directorio del proyecto:
+
+```bash
+git clone <https://github.com/jonni595/portfolio>
+cd portfolio
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Instala las dependencias:
+
+```bash
+pnpm install
+```
+
+Inicia el servidor de desarrollo:
+
+```bash
+pnpm dev
+```
+
+Abre la URL que muestra Vite en la terminal, normalmente `http://localhost:5173`.
+
+## Scripts disponibles
+
+| Comando        | Descripcion                                          |
+| -------------- | ---------------------------------------------------- |
+| `pnpm dev`     | Inicia el servidor de desarrollo                     |
+| `pnpm build`   | Ejecuta TypeScript y genera la version de produccion |
+| `pnpm lint`    | Ejecuta el analizador Oxlint                         |
+| `pnpm preview` | Sirve localmente la compilacion de produccion        |
+
+## Estructura del proyecto
+
+```text
+src/
+├── App.tsx
+├── components/
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Navigation.tsx
+│   ├── ProjectCard.tsx
+│   ├── Projects.tsx
+│   ├── ScrollToTop.tsx
+│   └── Skills.tsx
+├── data/
+│   ├── contact.ts
+│   ├── hero.ts
+│   ├── projects.ts
+│   └── skill.ts
+├── hooks/
+│   ├── useIntersectionObserver.ts
+│   └── useScrollToTop.ts
+└── types/
+    └── models.ts
+```
+
+## Personalizacion
+
+El contenido principal se encuentra en archivos separados dentro de `src/data`:
+
+- `hero.ts`: nombre, descripcion, roles, estadisticas y enlaces sociales
+- `projects.ts`: proyectos, tecnologias y enlaces
+- `skill.ts`: categorias y habilidades
+- `contact.ts`: enlaces de correo electronico, GitHub y LinkedIn
+
+Los estilos globales se cargan desde `src/index.css`, mientras que el enrutamiento visual es por anclas dentro de la pagina principal.
+
+## Compilacion
+
+Para crear una version lista para desplegar:
+
+```bash
+pnpm build
+```
+
+Los archivos generados se colocan en el directorio `dist`.
