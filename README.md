@@ -32,7 +32,7 @@ Portfolio personal desarrollado con React y TypeScript. Presenta información pr
 Clona el repositorio y entra en el directorio del proyecto:
 
 ```bash
-git clone <https://github.com/jonni595/portfolio>
+git clone https://github.com/jonni595/portfolio
 cd portfolio
 ```
 
