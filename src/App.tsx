@@ -1,5 +1,14 @@
+import Navigation from "./components/Navigation";
+import { useIntersectionObserver, useScrollToTop } from "@/hooks/";
+
 const App = () => {
-  return <div>App</div>;
+  const hasAnimated = useIntersectionObserver();
+  const showScrollTop = useScrollToTop();
+  return (
+    <main className="min-h-screen bg-white text-black">
+      <Navigation />
+    </main>
+  );
 };
 
 export default App;
