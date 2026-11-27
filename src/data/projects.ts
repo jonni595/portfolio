@@ -21,7 +21,7 @@ export const projects: Projects[] = [
     title: "Movie App",
     description:
       "Discover and explore movies with detailed information, ratings, and trailers.",
-    tech: ["React", "Open Movie Database API"],
+    tech: ["JavaScript vanilla", "Open Movie Database API"],
     github: "https://github.com/jonni595/movie-app",
     demo: "https://movie-app-jd.netlify.app/",
   },
